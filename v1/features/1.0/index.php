@@ -66,7 +66,7 @@ function get_petitions() {
         }
 
         // Go query the remote API, make sure reasonable parameters are passed if they are not set
-        $query_result = proxy_query($query_string, ($cbv['method'] == '' ? 'GET' : $cbv['method']), ($cbv['action'] == '' ? 'posts' : $cbv['action']));
+        $query_result = proxy_query($query_string, ($cbv['http_method'] == '' ? 'GET' : $cbv['http_method']), ($cbv['action'] == '' ? 'posts' : $cbv['action']));
 
         // At a minimum, add the link to where the user can go to see the full list
         if ($cbv['list_link'] != '') {
