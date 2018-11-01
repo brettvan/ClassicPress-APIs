@@ -22,7 +22,7 @@ function get_petitions() {
 
     $query_blocks = [
          'Trending' => [
-            'method' => 'GET',
+            'http_method' => 'GET',
             'action' => 'posts',
             'query' => 'trending',
             'limit' => 2,
@@ -30,7 +30,7 @@ function get_petitions() {
             'list_link' => 'https://petitions.classicpress.net/?view=trending',
         ],
         'Most Recent' => [
-            'method' => 'GET',
+            'http_method' => 'GET',
             'action' => 'posts',
             'query' => 'recent',
             'limit' => 2,
